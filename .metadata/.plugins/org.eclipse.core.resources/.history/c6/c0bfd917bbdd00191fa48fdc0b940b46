@@ -1,0 +1,19 @@
+package ch3;
+
+public class C3_exercises {
+	public int test_3(int x) {
+		int y = 0;
+		if (x<1) {
+			y = x;
+		} else if (x<10) {
+			y = 3 * x - 2;
+		} else {
+			y = 4 * x;
+		}
+		return y;
+	}
+	
+	public static void main(String[] args) {
+		test_3("12");
+	}
+}

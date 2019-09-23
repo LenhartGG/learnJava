@@ -1,0 +1,7 @@
+package ch4;
+
+import java.applet.Applet;
+
+public class C4_1 extends Applet {
+	
+}

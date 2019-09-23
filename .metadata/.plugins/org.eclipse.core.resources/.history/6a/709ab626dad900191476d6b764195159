@@ -1,0 +1,13 @@
+package ch3;
+
+//求解Fibonacci数列的1,1,2,3,5,8···的前36个数。
+class C3_11 {
+	public static void main(String[] args) {
+		int f1=1, f2=2;
+		for(int i=1; i<38/2; i++) {
+			System.out.print("\t" + f1 + "\t" + f2);
+		}
+		
+	}
+
+}
