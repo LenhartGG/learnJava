@@ -386,3 +386,34 @@ Binding(CTRL+SHIFT+C,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.tm.terminal.EditContext,,,system)
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2019-09-24 09:49:39.087
+!MESSAGE Full project indexing required:
+  [+] D:\Programs\Java\jre1.8.0_191\lib\charsets.jar
+  [+] D:\Programs\Java\jre1.8.0_191\lib\ext\access-bridge-64.jar
+  [+] D:\Programs\Java\jre1.8.0_191\lib\ext\cldrdata.jar
+  [+] D:\Programs\Java\jre1.8.0_191\lib\ext\dnsns.jar
+  [+] D:\Programs\Java\jre1.8.0_191\lib\ext\jaccess.jar
+  [+] D:\Programs\Java\jre1.8.0_191\lib\ext\jfxrt.jar
+  [+] D:\Programs\Java\jre1.8.0_191\lib\ext\localedata.jar
+  [+] D:\Programs\Java\jre1.8.0_191\lib\ext\nashorn.jar
+  [+] D:\Programs\Java\jre1.8.0_191\lib\ext\sunec.jar
+  [+] D:\Programs\Java\jre1.8.0_191\lib\ext\sunjce_provider.jar
+  [+] D:\Programs\Java\jre1.8.0_191\lib\ext\sunmscapi.jar
+  [+] D:\Programs\Java\jre1.8.0_191\lib\ext\sunpkcs11.jar
+  [+] D:\Programs\Java\jre1.8.0_191\lib\ext\zipfs.jar
+  [+] D:\Programs\Java\jre1.8.0_191\lib\jce.jar
+  [+] D:\Programs\Java\jre1.8.0_191\lib\jfr.jar
+  [+] D:\Programs\Java\jre1.8.0_191\lib\jsse.jar
+  [+] D:\Programs\Java\jre1.8.0_191\lib\resources.jar
+  [+] D:\Programs\Java\jre1.8.0_191\lib\rt.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)

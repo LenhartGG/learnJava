@@ -1,0 +1,16 @@
+package ch4;
+
+import java.applet.Applet; 
+import java.awt.Graphics;
+
+final class P1 {
+	int i = 7;
+	int j = 1;
+	void f (Graphics g) {
+		g.drawString("OK", 20, 50);
+	}
+}
+
+public class C4_6 extends Applet {
+	
+}
