@@ -1,20 +1,3 @@
 INDEX VERSION 1.131+D:\Programs\MyGitPlace\面向对象程序设计--Java\.metadata\.plugins\org.eclipse.jdt.core
-2355992689.index
-665458258.index
-2356443926.index
-752418374.index
-3830880294.index
-3374044175.index
-416782214.index
-4209643199.index
-1000402527.index
-2597997991.index
-1472752760.index
-1251110589.index
-3585524819.index
+295256051.index
 4177173190.index
-238233810.index
-2296178261.index
-3917520316.index
-2441471023.index
-1837268703.index
