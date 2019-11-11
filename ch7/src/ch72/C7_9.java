@@ -9,6 +9,7 @@ public class C7_9 {
 	public static void main(String[] args) {
 		Object x = "hello";
 		String s = "good bye";
+		String s2 = "good bye";
 		char cc[] = {'a','b','c','d','e','f'};
 		boolean b = false;
 		char c = 'Z';
@@ -25,6 +26,8 @@ public class C7_9 {
 		buf.append(' '); buf.append(f); buf.append(' ');
 		buf.append(d);
 		System.out.println(buf);
+		System.out.println(s==s2);
+		System.out.println(s+=s2);
 	}
 
 }
