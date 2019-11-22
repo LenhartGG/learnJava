@@ -20,6 +20,9 @@ public class C16_3 {
     public static void main(String[] args) {
         Connection conn = null;
         Statement stmt = null;
+        int[] id= {2, 3, 4};
+        String[] name= {"taobao","runoob","weibo"};
+        
     	try {
             Class.forName(JDBC_DRIVER);			//加载 JDBC 驱动程序
     	}
@@ -31,13 +34,30 @@ public class C16_3 {
             System.out.println("连接数据库...");
             conn = DriverManager.getConnection(DB_URL,USER,PASS);
         
-            // 创建Statement对象
-            System.out.println(" 实例化Statement对象...");
-            stmt = conn.createStatement();
-            String sql1, sql2, sql3;
-            sql2 = "INSERT INTO `JavaJDBCConnectiontoMySQL` VALUES ('1', 'Google', 'https://www.google.cm/', '1', 'USA'), ('2', '淘宝', 'https://www.taobao.com/', '13', 'CN'), ('3', '菜鸟教程', 'http://www.runoob.com', '5892', ''), ('4', '微博', 'http://weibo.com/', '20', 'CN'), ('5', 'Facebook', 'https://www.facebook.com/', '3', 'USA');";
-            stmt.executeUpdate(sql2);  //执行SQL命令
-            stmt.close();
+            // 修改数据库中数据表的内容
+            System.out.println(" 修改数据库中数据表的内容");
+            String sql="UPDATE `JavaJDBCConnectiontoMySQL` set name=? where id=?";
+            PreparedStatement ps = conn.prepareStatement(sql);
+            int i=0;
+            do {
+            	ps.setString(1, name[i]);
+            	ps.setInt(2, id[i]);
+            	ps.executeUpdate();				//执行sql修改命令
+            	++i;
+            } while(i<id.length);
+            ps.close();
+            //查询数据库并把数据表的内容输出到屏幕上
+            Statement s=conn.createStatement();
+            sql="select * from JavaJDBCConnectiontoMySQL";
+            ResultSet rs=s.executeQuery(sql);
+            while(rs.next()) {
+            	System.out.println("\t"+rs.getInt("id")+
+            						"\t"+rs.getString("name")+
+            						"\t"+rs.getString("url")+
+            						"\t"+rs.getString("alexa")+
+            						"\t"+rs.getString("country"));
+            }
+            s.close();
             conn.close();
     	}
         catch(SQLException e){

@@ -1,9 +1,9 @@
 package ch16;
 
 import java.sql.*;
-//向数据表中插入数据
+//删除记录
 
-public class C16_2 {
+public class C16_4 {
     // MySQL 8.0 以下版本 - JDBC 驱动名及数据库 URL
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
     static final String DB_URL = "jdbc:mysql://135.252.218.128:3306/liuhuan_test";
@@ -34,9 +34,9 @@ public class C16_2 {
             // 创建Statement对象
             System.out.println(" 实例化Statement对象...");
             stmt = conn.createStatement();
-            String sql;
-            sql = "INSERT INTO `JavaJDBCConnectiontoMySQL` VALUES ('1', 'Google', 'https://www.google.cm/', '1', 'USA'), ('2', '淘宝', 'https://www.taobao.com/', '13', 'CN'), ('3', '菜鸟教程', 'http://www.runoob.com', '5892', ''), ('4', '微博', 'http://weibo.com/', '20', 'CN'), ('5', 'Facebook', 'https://www.facebook.com/', '3', 'USA');";
-            stmt.executeUpdate(sql);  //执行SQL命令
+            String sql1, sql2, sql3;
+            sql2 = "INSERT INTO `JavaJDBCConnectiontoMySQL` VALUES ('1', 'Google', 'https://www.google.cm/', '1', 'USA'), ('2', '淘宝', 'https://www.taobao.com/', '13', 'CN'), ('3', '菜鸟教程', 'http://www.runoob.com', '5892', ''), ('4', '微博', 'http://weibo.com/', '20', 'CN'), ('5', 'Facebook', 'https://www.facebook.com/', '3', 'USA');";
+            stmt.executeUpdate(sql2);  //执行SQL命令
             stmt.close();
             conn.close();
     	}
