@@ -1,20 +1,3 @@
 INDEX VERSION 1.131+C:\WorkStation\PersonalPlace\github-workspace\learnJava\.metadata\.plugins\org.eclipse.jdt.core
-2499369105.index
-567731414.index
-3002434440.index
-2671164058.index
-395371505.index
-743092880.index
-3208258971.index
-2259724009.index
-2510109136.index
-1237216155.index
-2053644816.index
-1074940259.index
-1075982519.index
-152426470.index
+3121385796.index
 3040839353.index
-2733146956.index
-4089234665.index
-1109055741.index
-3111940982.index
